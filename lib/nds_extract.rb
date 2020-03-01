@@ -28,8 +28,10 @@ def directors_totals(nds)
     pp director
     while film_index < nds[director_index][:movies].length do
       tally = tally + nds[director_index][:movies][film_index][:worldwide_gross]
-      
+      film_index += 1
     end
-    # total_grosses[director:] = 
+    film_index = 0
+    total_grosses[director:] = tally
+    tally = 0
   end
 end
