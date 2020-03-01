@@ -27,6 +27,7 @@ def directors_totals(nds)
     director = nds[director_index]
     while film_index < nds[director_index].length do
       
+      while 
     end
     total_grosses[director:] = 
   end
