@@ -24,7 +24,8 @@ def directors_totals(nds)
   pp nds
   while director_index < nds.length do
     film_index = 0
-    director = nds[director_index]
+    director = nds[director_index][:name]
+    pp director
     while film_index < nds[director_index].length do
       
       while 
