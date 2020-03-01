@@ -18,5 +18,21 @@ def directors_totals(nds)
   #
   #
   # Be sure to return the result at the end!
-  nil
+  
+  total_grosses = {}
+  director_index = 0
+  tally = 0
+  while director_index < nds.length do
+    film_index = 0
+    director = nds[director_index][:name]
+    while film_index < nds[director_index][:movies].length do
+      tally = tally + nds[director_index][:movies][film_index][:worldwide_gross]
+      film_index += 1
+    end
+    film_index = 0
+    total_grosses[director] = tally
+    tally = 0
+    director_index += 1
+  end
+  return total_grosses
 end
