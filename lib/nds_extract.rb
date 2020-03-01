@@ -30,6 +30,6 @@ def directors_totals(nds)
       
     
     end
-    total_grosses[director:] = 
+    # total_grosses[director:] = 
   end
 end
