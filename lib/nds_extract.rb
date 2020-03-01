@@ -21,14 +21,14 @@ def directors_totals(nds)
   
   total_grosses = {}
   director_index = 0
-  pp nds
+  tally = 0
   while director_index < nds.length do
     film_index = 0
     director = nds[director_index][:name]
     pp director
-    while film_index < nds[director_index].length do
+    while film_index < nds[director_index][:movies].length do
+      tally = tally + nds[director_index][:movies][film_index][:worldwide_gross]
       
-    
     end
     # total_grosses[director:] = 
   end
