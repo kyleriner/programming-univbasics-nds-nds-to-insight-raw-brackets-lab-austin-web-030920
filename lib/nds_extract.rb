@@ -33,5 +33,7 @@ def directors_totals(nds)
     film_index = 0
     total_grosses[director:] = tally
     tally = 0
+    director_index += 1
   end
+  return total_grosses
 end
